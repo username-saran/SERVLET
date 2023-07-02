@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <style>
+          body{
+               background-color: darkslategrey;
+          }
+          .container{
+               
+               border-radius: 30px;
+               margin-top: 150px;
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <h2 style="color: white;font-weight: bolder;">Hotel booking</h2>
+          <div class="row">
+               <div class="col">
+                    <table class="table table-borderless">
+                         <form action="getAmount" method="post">
+                              <tr>
+                                   <td style="color: white;font-weight: bolder;">Name:</td>
+                                   <td>
+                                        <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td style="color: white;font-weight: bolder;">Phone Number</td>
+                                   <td>
+                                        <input type="number" name="phn" id="phn" placeholder="Phone Number" class="form-control">
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td style="color: white;font-weight: bolder;">Check IN</td>
+                                   <td>
+                                        <input type="date" name="checkIN" id="checkIN" class="form-control">
+                                   </td>
+                              </tr>
+                            
+           
+                              <tr>
+                                   <td style="color: white;font-weight: bolder;">Check Out</td>
+                                   <td>
+                                        <input type="date" name="checkOUT" id="checkOUT" class="form-control">
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td style="color: white;font-weight: bolder;">
+                                        Room Type
+                                   </td>
+                                   <td>
+                                        <div class="row">
+                                             <div class="col">
+                                                  <select name="AC" id="AC" class="form-control">
+                                                       <option value="AC">AC</option>
+                                                       <option value="NON">Non AC</option>
+                                                  </select>
+                                             </div>
+                                             <div class="col">
+                                                  <select name="type" id="type" class="form-control">
+                                                       <option value="Single">Single Coach</option>
+                                                       <option value="Double">Double Coach</option>
+                                                  </select>
+                                             </div>
+                                        </div>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td colspan="2" align="center">
+                                        <input type="submit" value="Submit" class="btn btn-primary">
+                                   </td>
+                              </tr>
+                         </form>
+                    </table>
+               </div>
+          </div>
+     </div>
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

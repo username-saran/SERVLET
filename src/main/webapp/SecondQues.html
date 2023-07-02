@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>First Question</title>
+</head>
+<body>
+     <form action="Response" method="get">
+          <h1 style="color: hotpink;">This form invokes a servlet as its aciton.</h1>
+          <br>
+          Please enter your company's name:
+          <br>
+          <br>
+          <input type="text" name="companyName" id="companyName" style="width: 230px;">
+          <br>
+          <br>
+          <br>
+          What web services does your company need?
+          <br>
+          <br>
+          <input type="checkbox" name="webServerHosting" >Web Server Hosting <br>
+          <input type="checkbox" name="webPageDesign" >Web Page webPageDesign <br>
+          <input type="checkbox" name="JavaServlets" >Java Servlets and JSP Development <br>
+          
+          <br>
+          <br>
+          How many people are in your company?
+          <br>
+          <br>
+          <input type="radio" name="people" value="oneplus">1 to 9 <br>
+          <input type="radio" name="people" value="tenplus">10 to 99 <br>
+          <input type="radio" name="people" value="hundredplus">100 to 999 <br>
+          <input type="radio" name="people" value="thousandplus">1000+ <br>
+          <br>
+          <br>
+
+          <input type="submit" value="Submit Form">
+     </form>
+</body>
+</html>
